@@ -238,6 +238,10 @@ loader.source().then(async game => {
 
 You can find the result [here](./gameloader.user.js).
 
+Comparing this custom loader to the WASM loader:
+- There is no lag spike during the page load
+- Loading time is under 100 MS
+
 This is not a guide on how to make cheats but it is possible with enough knowledge. With the games source and the ability to load it from a variable, you can make modifications and patches to the game or even extract data.
 
 If you have any questions, make a post on our [forum](https://forum.sys32.dev/)
