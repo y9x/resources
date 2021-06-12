@@ -1,6 +1,7 @@
 # Basic Game Loader Tutorial
 
 Created on `6/11/2021`, if Krunker devs continue to be lazy then this may work in the future.
+
 I will update this time to time if the matchmaker token generation changes.
 
 You can find the result [here](./gameloader.user.js), but I recommend following this tutorial.
@@ -8,11 +9,14 @@ You can find the result [here](./gameloader.user.js), but I recommend following 
 #### api.sys32.dev endpoints:
 
 V2:
+
 GET /key - Client-Key header
+
 GET /source - Krunker's source ran through [Terser](https://github.com/terser/terser)
+
 POST /token - Hashing the retrieved token from Krunker's matchmaker
 
-Making a game loader requires the following:
+#### Making a game loader requires the following:
 - Removing the WASM loader
 - Fetching the latest source
 - Generating a matchmaker token
