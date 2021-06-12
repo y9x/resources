@@ -240,4 +240,4 @@ You can find the result [here](./gameloader.user.js).
 
 This is not a guide on how to make cheats but it is possible with enough knowledge. With the games source and the ability to load it from a variable, you can make modifications and patches to the game or even extract data.
 
-If you have any questions, make a post on our [forum](https://y9x.github.io/forum/)
+If you have any questions, make a post on our [forum](https://forum.sys32.dev/)
