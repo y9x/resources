@@ -10,9 +10,9 @@ You can find the result [here](./gameloader.user.js), but I recommend following 
 
 V2:
 
-GET /key - Client-Key header
-
 GET /source - Krunker's source ran through [Terser](https://github.com/terser/terser)
+
+GET /key - Client-Key header
 
 POST /token - Hashing the retrieved token from Krunker's matchmaker
 
