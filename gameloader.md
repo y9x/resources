@@ -252,4 +252,25 @@ Comparing this custom loader to the WASM loader:
 
 This is not a guide on how to make cheats but it is possible with enough knowledge. With the games source and the ability to load it from a variable, you can make modifications and patches to the game or even extract data.
 
+### Using Krunker's matchmaker
+
+For accessing https://matchmaker.krunker.io/seek-game , you need the `validationToken` query.
+
+The `validationToken` is created from the token argument resolve value, it is array of UTF8 bytes.
+
+```js
+var loader = new GameLoader();
+
+var token_argument = loader.token_argument();
+
+token_argument.then(token => {
+	// token is a array, String.fromCharCode accepts multiple number arguments and returns a string.
+	var validationToken = String.fromCharCode(...token);
+	
+	console.log('Created validation token:', validationToken);
+	
+	// fetch('https://matchmaker.krunker.io/seek-game?
+});
+```
+
 If you have any questions, make a post on our [forum](https://forum.sys32.dev/)
