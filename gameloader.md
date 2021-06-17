@@ -223,6 +223,10 @@ loader.source().then(async game => {
 We will also need to wait for the observer to indicate the game is ready to load. Once loaded, we will call the newly created `game_function` with the Promisie `token_argument`.
 
 ```js
+var load_promise = loader.observe();
+
+var token_argument = loader.token_argument();
+
 loader.source().then(async game => {
 	console.info('Retrieved the games source, the length is', game.length);
 	
