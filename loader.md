@@ -1,6 +1,5 @@
 # Game Loader Tutorial
-
-Created on `6/11/2021`, if Krunker devs continue to be lazy then this may work in the future.
+Last uupdated on `6/29/2021`
 
 I will update this time to time if the matchmaker token generation changes.
 
