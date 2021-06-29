@@ -272,4 +272,4 @@ token_argument.then(token => {
 });
 ```
 
-If you have any questions, make a post on our [forum](https://forum.sys32.dev/)
+If you have any questions, make a post on our [forum](https://forum.sys32.dev/).
