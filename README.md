@@ -1,16 +1,16 @@
 ## Krunker.IO Development Resources
 
-### [Game Loader Tutorial](./gameloader.md)
+### [Game Loader Tutorial](./loader.md)
 
 Covers:
 - Matchmaker
 - Game source
 - Creating userscripts
 
-### [Game Patcher Tutorial](./gamepatcher.md)
+### [Game Patcher Tutorial](./patcher.md)
 
 Covers:
-- Modifying the game string from the [game loader](./gameloader.md)
+- Modifying the game string from the [game loader](./loader.md)
 - Sharing private objects via new Function and hashes
 - Extracting variables such as THREE, Renderer, Game
 
