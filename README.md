@@ -1,6 +1,6 @@
 # Krunker.IO Development Resources
 
-## Tutorials:
+## Tutorials
 
 ### [Loader](./loader.md)
 - Matchmaker
@@ -12,7 +12,7 @@
 - Sharing private objects via new Function and hashes
 - Extracting variables such as THREE, Renderer, Game
 
-## Source:
+## Source
 
 [Latest](https://api.sys32.dev/v2/source)
 
@@ -22,7 +22,7 @@
 
 [Archived Versions](https://mega.nz/folder/eE9ghBzS#nw_TzAoWnK9Cz5Sry-lECw)
 
-### Support:
+### Support
 
 [Forum](https://forum.sys32.dev)
 
