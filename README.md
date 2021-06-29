@@ -2,6 +2,8 @@
 
 ### [Basic Game Loader Tutorial, Matchmaker, and game source](./gameloader.md)
 
+### [Basic Game Patcher Tutorial, Sharing private objects and extracting variables](./gamepatcher.md)
+
 ### Source:
 
 [Latest](https://api.sys32.dev/v2/source)
