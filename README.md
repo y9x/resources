@@ -2,14 +2,12 @@
 
 ### [Game Loader Tutorial](./loader.md)
 
-Covers:
 - Matchmaker
 - Game source
 - Creating userscripts
 
 ### [Game Patcher Tutorial](./patcher.md)
 
-Covers:
 - Modifying the game string from the [game loader](./loader.md)
 - Sharing private objects via new Function and hashes
 - Extracting variables such as THREE, Renderer, Game
@@ -23,3 +21,8 @@ Covers:
 [Leaked Source](https://mega.nz/folder/OJEgjLIJ#YEyz7VsyyjauZarD8JLldg)
 
 [Archived Versions](https://mega.nz/folder/eE9ghBzS#nw_TzAoWnK9Cz5Sry-lECw)
+
+### Support:
+
+[Forum](https://forum.sys32.dev)
+[Issues tab](./issues)
