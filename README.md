@@ -26,4 +26,4 @@
 
 [Forum](https://forum.sys32.dev)
 
-[Issues tab](./issues)
+[Issues tab](https://github.com/y9x/resources/issues)
