@@ -1,4 +1,3 @@
-
 # Game Patcher Tutorial
 Last updated on `6/29/2021`
 
@@ -23,10 +22,6 @@ The hash variable will be passed as the first argument to the game function and 
 The data object will contain information and functions from the game or to the game.
 
 ```js
-var load_promise = loader.observe();
-
-var token_argument = loader.token_argument();
-
 loader.source().then(async game_code => {
 	var hash = Math.random().toString();
 	
@@ -96,10 +91,6 @@ window.exposed_game // { players: [...] }
 Now applying this to Krunker.io using an object rather than the window:
 
 ```js
-var load_promise = loader.observe();
-
-var token_argument = loader.token_argument();
-
 loader.source().then(async game_code => {
 	var hash = Math.random().toString();
 	
