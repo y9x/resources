@@ -4,7 +4,7 @@ Created on `6/11/2021`, if Krunker devs continue to be lazy then this may work i
 
 I will update this time to time if the matchmaker token generation changes.
 
-You can find the result [here](./gameloader.user.js), but I recommend following this tutorial.
+You can find the result [here](./loader.user.js), but I recommend following this tutorial.
 
 #### api.sys32.dev endpoints:
 
@@ -244,7 +244,7 @@ loader.source().then(async game => {
 });
 ```
 
-You can find the result [here](./gameloader.user.js).
+You can find the result [here](./loader.user.js).
 
 Comparing this custom loader to the WASM loader:
 - There is no lag spike during the page load
