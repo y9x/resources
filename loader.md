@@ -1,4 +1,4 @@
-# Basic Game Loader Tutorial
+# Game Loader Tutorial
 
 Created on `6/11/2021`, if Krunker devs continue to be lazy then this may work in the future.
 
