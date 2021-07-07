@@ -5,15 +5,8 @@ I will update this time to time if the matchmaker token generation changes.
 
 You can find the result [here](./loader.user.js), but I recommend following this tutorial.
 
-#### api.sys32.dev endpoints:
-
-V2:
-
-GET /source - Krunker's source ran through [Terser](https://github.com/terser/terser)
-
-GET /key - Client-Key header
-
-POST /token - Hashing the retrieved token from Krunker's matchmaker
+Information about the api.sys32.dev endpoints:
+https://forum.sys32.dev/d/44-apisys32dev
 
 #### Making a game loader requires the following:
 - Removing the WASM loader
