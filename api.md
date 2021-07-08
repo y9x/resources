@@ -1,45 +1,97 @@
-Endpoints for api.sys32.dev
+# Endpoints for https://api.sys32.dev/
 
-# v2
+## Generate the `Client-Key` header
 
-## Matchmaking:
+| Method | Endpoint  |
+| - | - |
+| `GET` | [/v2/key](https://api.sys32.dev/v2/key) |
 
-### `GET /key`
+Response:
 
-Returns the `client-key` header for making requests to https://matchmaker.krunker.io/generate-token
+```txt
+118,108,84,117,52,87,50,104,115,51,116,112,107,114,80,72,55,54,114,73,83,66,109,84,113,66,90,78,68,84,108,118,117,103,113,99,48,110,89,54,82,70,49,69,97,56,70,82,109,87,49,108,120,56,53,67,109,119,110,109,48,85,111,97
+```
 
-### `POST /token`
+## Hash the matchmaker's token
 
-Request body is the JSON response from https://matchmaker.krunker.io/generate-token
+Post body parameters are derived from the client's request to [https://matchmaker.krunker.io/generate-token](https://matchmaker.krunker.io/generate-token). The response is a JSON array of UTF-8 bytes that can be efficiently read as a string by running `String.fromCharCode(...bytes)`.
 
-Returns the result of hashing the request body.
+| Method | Endpoint  |
+| - | - |
+| `POST` | [/v2/key](https://api.sys32.dev/v2/token) |
 
-## Source:
+Post body:
 
-###  `GET /source`
+| Parameter | Type      | Description  |
+| --------- | --------- | ------------ |
+| cfid      | `Integer` | Session ID   |
+| sid       | `Integer` | Salt ID      |
+| token     | `String`  | Raw token    |
 
-Krunker's raw source ran through [Terser](https://github.com/terser/terser)
+Response: 
 
-### `GET /source/checksum`
+```json
+[76,65,74,73,76,106,106,98,103,97,73,99,89,78,50,65,117,48,100,73,50,122,107,82,67,90,69,114,84,67,55,102,102,107,73,118,98,111,66,83,86,52,114,113,73,81,67,104,89,65,89,82,78,118,118,108,113,71,75,117,79,117,121,121]
+```
 
-JSON checksum data for `/source`
+## Retrieve Krunker's source
+
+Returns Krunker's source ran through [Terser](https://github.com/terser/terser).
+
+| Method | Endpoint  |
+| - | - |
+| `GET` | [/v2/source](https://api.sys32.dev/v2/source) |
+
+Response:
+
+```js
+if(typeof createPrivateRoom=='function'){let a='Multiple instances of Krunker.IO running';console.trace(a);throw alert(a+', try disabling duplicate userscripts')}//# sourceURL=Krunker.e575H.js
+!function(e){var t,i=(
+```
+
+## Retrieve a checksum of Krunker's source
+
+Returns a JSON object containing the MD5 checksum of the source from /v2/source.
+
+| Method | Endpoint  |
+| - | - |
+| `GET` | [/v2/source/checksum](https://api.sys32.dev/v2/source/checksum) |
+
+Response:
 
 ```json
 {
-	"md5": "..."
+	"md5":"639222ff65cb008fae5cfd774538058f"
 }
 ```
 
-###  `GET /source/raw`
+## Retrieve Krunker's raw source
 
-Krunker's raw source
+Includes all the bloat added by [Javascript-Obfuscator](https://www.npmjs.com/package/javascript-obfuscator) as part of Krunker's webpack configuration.
 
-### `GET /source/raw/checksum`
+| Method | Endpoint  |
+| - | - |
+| `GET` | [/v2/source/raw](https://api.sys32.dev/v2/source/raw) |
 
-JSON checksum data for `/source/raw`
+Response:
+
+```js
+
+!function(iiïîiíí){var iîiïiìî=function(){var iíîïiiì=!![];return function(iìïiïíì,iíiîïìí){
+```
+
+## Retrieve a checksum of Krunker's raw source
+
+Returns a JSON object containing the MD5 checksum of the source from /v2/source.
+
+| Method | Endpoint  |
+| - | - |
+| `GET` | [/v2/source/raw/checksum](https://api.sys32.dev/v2/source/raw/checksum) |
+
+Response:
 
 ```json
 {
-	"md5": "..."
+	"md5":"94060f93d6cfcfe4facdab39f3b8e02e"
 }
 ```
