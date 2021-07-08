@@ -5,8 +5,7 @@ I will update this time to time if the matchmaker token generation changes.
 
 You can find the result [here](./loader.user.js), but I recommend following this tutorial.
 
-Information about the api.sys32.dev endpoints:
-https://forum.sys32.dev/d/44-apisys32dev
+Information about the api.sys32.dev endpoints can be found [here](./api.md).
 
 #### Making a game loader requires the following:
 - Removing the WASM loader
