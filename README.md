@@ -12,6 +12,8 @@
 - Sharing private objects via new Function and hashes
 - Extracting variables such as THREE, Renderer, Game
 
+## [api.sys32.dev API docs](./api.md)
+
 ## Source
 
 [Latest](https://api.sys32.dev/v2/source)
