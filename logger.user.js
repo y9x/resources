@@ -54,7 +54,7 @@ class HookedWebSocket extends WebSocket {
 			packet.data = msgpack.encode([ label, data ]);
 		});
 		
-		console.clear();
+		if(only_log_packets)console.clear();
 		
 		console.log('WebSocket hooked');
 	}
