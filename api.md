@@ -42,11 +42,24 @@ Returns Krunker's source ran through [Terser](https://github.com/terser/terser).
 | - | - |
 | `GET` | [/v2/source](https://api.sys32.dev/v2/source) |
 
+Query:
+
+| Parameter | Type      | Description  |
+| --------- | --------- | ------------ |
+| raw       | `*`       | If specified, the original source that includes all the bloat added by [Javascript-Obfuscator](https://www.npmjs.com/package/javascript-obfuscator) as part of Krunker's webpack configuration will be returned |
+
 Response:
 
 ```js
 if(typeof createPrivateRoom=='function'){let a='Multiple instances of Krunker.IO running';console.trace(a);throw alert(a+', try disabling duplicate userscripts')}//# sourceURL=Krunker.e575H.js
 !function(e){var t,i=(
+```
+
+`?raw`
+
+```js
+
+!function(iiïîiíí){var iîiïiìî=function(){var iíîïiiì=!![];return function(iìïiïíì,iíiîïìí){
 ```
 
 ## Retrieve a checksum of Krunker's source
@@ -57,41 +70,16 @@ Returns a JSON object containing the MD5 checksum of the source from /v2/source.
 | - | - |
 | `GET` | [/v2/source/checksum](https://api.sys32.dev/v2/source/checksum) |
 
+Query:
+
+| Parameter | Type      | Description  |
+| --------- | --------- | ------------ |
+| raw       | `*`       | If specified, the original source's checksum will be returned |
+
 Response:
 
 ```json
 {
 	"md5":"639222ff65cb008fae5cfd774538058f"
-}
-```
-
-## Retrieve Krunker's raw source
-
-Includes all the bloat added by [Javascript-Obfuscator](https://www.npmjs.com/package/javascript-obfuscator) as part of Krunker's webpack configuration.
-
-| Method | Endpoint  |
-| - | - |
-| `GET` | [/v2/source/raw](https://api.sys32.dev/v2/source/raw) |
-
-Response:
-
-```js
-
-!function(iiïîiíí){var iîiïiìî=function(){var iíîïiiì=!![];return function(iìïiïíì,iíiîïìí){
-```
-
-## Retrieve a checksum of Krunker's raw source
-
-Returns a JSON object containing the MD5 checksum of the source from /v2/source.
-
-| Method | Endpoint  |
-| - | - |
-| `GET` | [/v2/source/raw/checksum](https://api.sys32.dev/v2/source/raw/checksum) |
-
-Response:
-
-```json
-{
-	"md5":"94060f93d6cfcfe4facdab39f3b8e02e"
 }
 ```
