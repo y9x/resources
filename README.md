@@ -12,7 +12,7 @@
 - Sharing private objects via new Function and hashes
 - Extracting variables such as THREE, Renderer, Game
 
-## [Krunker Packet Logger](./logger.user.js)
+## [Packet Logger](./logger.user.js)
 
 ## [api.sys32.dev API docs](./api.md)
 
