@@ -18,7 +18,7 @@ Post body parameters are derived from the client's request to [https://matchmake
 
 | Method | Endpoint  |
 | - | - |
-| `POST` | [/v2/key](https://api.sys32.dev/v2/token) |
+| `POST` | [/v2/token](https://api.sys32.dev/v2/token) |
 
 Post body:
 
