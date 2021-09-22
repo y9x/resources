@@ -1,6 +1,8 @@
 # Game Loader Tutorial
 Last updated on `6/29/2021`
 
+Functional as of `9/21/2021`
+
 I will update this time to time if the matchmaker token generation changes.
 
 You can find the result [here](./loader.user.js), but I recommend following this tutorial.
