@@ -1,4 +1,4 @@
-# Krunker development resources
+# Resources for Krunker development
 
 ## Tutorials
 
