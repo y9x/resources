@@ -14,9 +14,10 @@
 
 ## [Packet Logger](./logger.user.js)
 
-## [V2 API docs](./api.v2.md)
+## MatchMaking API Docs
 
-## [V3 API docs](./api.v3.md)
+- [V2](./api/v2.md)
+- [V3](./api/v3.md)
 
 ## Source
 
