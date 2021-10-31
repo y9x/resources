@@ -1,4 +1,4 @@
-# Krunker.IO Development Resources
+# Krunker development resources
 
 ## Tutorials
 
