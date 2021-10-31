@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name           Krunker Loader
+// @name           Krunker Loader (V2)
 // @author         The Gaming Gurus
 // @description    A simple loader for Krunker
 // @version        1.0
