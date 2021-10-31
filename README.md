@@ -14,7 +14,9 @@
 
 ## [Packet Logger](./logger.user.js)
 
-## [api.sys32.dev API docs](./api.md)
+## [V2 API docs](./api.v2.md)
+
+## [V3 API docs](./api.v3.md)
 
 ## Source
 
