@@ -5,7 +5,7 @@ Functional as of `9/21/2021`
 
 I will update this time to time if the matchmaker token generation changes.
 
-You can find the result [here](./loader.user.js), but I recommend following this tutorial.
+You can find the result [here](./loader.v2.user.js), but I recommend following this tutorial.
 
 Information about the api.sys32.dev endpoints can be found [here](./api.md).
 
@@ -237,7 +237,7 @@ loader.source().then(async game => {
 });
 ```
 
-You can find the result [here](./loader.user.js).
+You can find the result [here](./loader.v2.user.js).
 
 Comparing this custom loader to the WASM loader:
 - There is no lag spike during the page load
