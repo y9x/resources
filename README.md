@@ -8,7 +8,7 @@
 - Creating userscripts
 
 ### [Patcher](./patcher)
-- Modifying the game string from the [game loader](./loader.md)
+- Modifying the game string from the [game loader](./loader)
 - Sharing private objects via new Function and hashes
 - Extracting variables such as THREE, Renderer, Game
 
