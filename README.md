@@ -23,7 +23,7 @@
 
 [Latest](https://api.sys32.dev/v3/source)
 
-[Latest (Pretty printed)](https://api.sys32.dev/v3/source.pretty)
+[Latest (Pretty printed)](https://api.sys32.dev/v3/source.pretty?download)
 
 [Mega Archive](https://mega.nz/folder/PAcjzaYb#ITVrn9P7-0kRurX3MU969w)
 
