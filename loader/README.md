@@ -1,7 +1,8 @@
 # Game Loader Tutorial
-Last updated on `6/29/2021`
 
-Functional as of `9/21/2021`
+> Last updated on `1/16/2021`
+> 
+> Functional as of `1/16/2021`
 
 I will update this time to time if the matchmaker token generation changes.
 
