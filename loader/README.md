@@ -10,7 +10,7 @@ You can find the result [here](./loader.v3.pretty.user.js), but I recommend foll
 
 Information about the api.sys32.dev endpoints can be found [here](./api.md).
 
-## Prequisites
+## Prerequisites
 
 - Enable instant inject in Tampermonkey. This is because the game's preload script (in the document head) detects Tampermonkey's late loading.
 
