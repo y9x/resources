@@ -8,7 +8,7 @@ I will update this time to time if the matchmaker token generation changes.
 
 You can find the result [here](./loader.v3.pretty.user.js), but I recommend following this tutorial.
 
-Information about the api.sys32.dev endpoints can be found [here](./api.md).
+Information about the api.sys32.dev endpoints can be found [here](../api/v3.md).
 
 ## Prerequisites
 
