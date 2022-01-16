@@ -27,7 +27,7 @@ Information about the api.sys32.dev endpoints can be found [here](./api.md).
 
 1. Basic userscript layout.
 
-Create a [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) userscript with headers that matches Krunker.IO.
+Create a [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) userscript with headers that matches Krunker.
 
 For this tutorial we will be using a class called GameLoader which contains our functions.
 
@@ -115,7 +115,7 @@ var load_promise = loader.observe();
 
 3. Generate a matchmaker token.
 
-Inspecting network requests to Krunker.io, the first request made is to https://matchmaker.krunker.io/generate-token which has the Client-Key header attached.
+Inspecting network requests to Krunker, the first request made is to https://matchmaker.krunker.io/generate-token which has the Client-Key header attached.
 
 The API at api.sys32.dev will provide us with the Client-Key header by fetching https://api.sys32.dev/v3/key
 
