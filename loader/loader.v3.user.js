@@ -98,7 +98,7 @@ class GameLoader {
 	}
 	async source(){
 		// Make the request
-		var game_request = await fetch('https://api.sys32.dev/v3/source?ce');
+		var game_request = await fetch('https://api.sys32.dev/v3/source');
 		
 		// Read the response as text
 		return await game_request.text();
