@@ -5,7 +5,7 @@ Functional as of `9/21/2021`
 
 I will update this time to time if the matchmaker token generation changes.
 
-You can find the result [here](./loader.v2.user.js), but I recommend following this tutorial.
+You can find the result [here](./loader.v3.pretty.user.js), but I recommend following this tutorial.
 
 Information about the api.sys32.dev endpoints can be found [here](./api.md).
 
@@ -107,12 +107,12 @@ var load_promise = loader.observe();
 
 Inspecting network requests to Krunker.io, the first request made is to https://matchmaker.krunker.io/generate-token which has the Client-Key header attached.
 
-The API at api.sys32.dev will provide us with the Client-Key header by fetching https://api.sys32.dev/v2/key
+The API at api.sys32.dev will provide us with the Client-Key header by fetching https://api.sys32.dev/v3/key
 
 ```js
 async client_key(){
 	// Make the request
-	var client_key_request = await fetch('https://api.sys32.dev/v2/key');
+	var client_key_request = await fetch('https://api.sys32.dev/v3/key');
 	
 	// Read the response as text.
 	return await client_key_request.text();
@@ -157,7 +157,7 @@ async hash_token(token){
 	hash_options.body = JSON.stringify(token);
 	
 	// Make the request
-	var hash_request = await fetch('https://api.sys32.dev/v2/token', hash_options);
+	var hash_request = await fetch('https://api.sys32.dev/v3/token', hash_options);
 	
 	// Read the response as JSON
 	return await hash_request.json();
@@ -185,12 +185,14 @@ async token_argument(){
 
 4. Loading the game source with the matchmaker token.
 
-The API endpoint https://api.sys32.dev/v2/source provides the latest Krunker source. We will fetch this URL and read it as text.
+The API endpoint https://api.sys32.dev/v3/source.pretty provides the latest Krunker source. We will fetch this URL and read it as text.
+>  https://api.sys32.dev/v3/source.pretty will return a beautified source (easy to read, newlines), if you want the minified source then change this URL to https://api.sys32.dev/v3/source
+
 
 ```js
 async source(){
 	// Make the request
-	var game_request = await fetch('https://api.sys32.dev/v2/source');
+	var game_request = await fetch('https://api.sys32.dev/v3/source.pretty');
 	
 	// Read the response as text
 	return await game_request.text();
@@ -237,7 +239,7 @@ loader.source().then(async game => {
 });
 ```
 
-You can find the result [here](./loader.v2.user.js).
+You can find the result [here](./loader.v3.pretty.user.js).
 
 Comparing this custom loader to the WASM loader:
 - There is no lag spike during the page load
