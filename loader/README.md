@@ -10,6 +10,15 @@ You can find the result [here](./loader.v3.pretty.user.js), but I recommend foll
 
 Information about the api.sys32.dev endpoints can be found [here](./api.md).
 
+## Prequisites
+
+- Enable instant inject in Tampermonkey. This is because the game's preload script (in the document head) detects Tampermonkey's late loading.
+
+1. Go to Tampermonkey Dashboard
+2. Click on settings
+3. Change Config mode to Advanced
+4. Scroll to the bottom of the dashboard and find "Experimental". Change Inject Mode to Instant
+
 #### Making a game loader requires the following:
 - Removing the WASM loader
 - Fetching the latest source
